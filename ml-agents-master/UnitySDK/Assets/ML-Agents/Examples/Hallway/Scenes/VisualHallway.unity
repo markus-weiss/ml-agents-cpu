@@ -716,6 +716,12 @@ Prefab:
       propertyPath: grayscale
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 114090834606594908, guid: f2281a3adc3e640b490f89407c2e12d1,
+        type: 2}
+      propertyPath: m_Model
+      value: 
+      objectReference: {fileID: 11400000, guid: 84eed32b6957e2f4bab5d0951e968ffa,
+        type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f2281a3adc3e640b490f89407c2e12d1, type: 2}
   m_IsPrefabParent: 0

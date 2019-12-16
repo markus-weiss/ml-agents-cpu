@@ -289,7 +289,7 @@ class LearningModel(object):
                 strides=[2, 2],
                 activation=tf.nn.elu,
                 reuse=reuse,
-                
+
                 name="conv_2",
             )
             conv3 = tf.layers.conv2d(
