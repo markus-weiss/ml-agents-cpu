@@ -281,6 +281,7 @@ class LearningModel(object):
                 reuse=reuse,
                 name="conv_1",
             )
+            ### Adding Pooling Layer
             conv2 = tf.layers.conv2d(
                 conv1,
                 32,
@@ -288,9 +289,19 @@ class LearningModel(object):
                 strides=[2, 2],
                 activation=tf.nn.elu,
                 reuse=reuse,
+                
                 name="conv_2",
             )
-            hidden = tf.layers.flatten(conv2)
+            conv3 = tf.layers.conv2d(
+                conv2,
+                64,
+                kernel_size=[2, 2],
+                strides=[2, 2],
+                activation=tf.nn.elu,
+                reuse=reuse,
+                name="conv_3")
+
+            hidden = tf.layers.flatten(conv3)
 
         with tf.variable_scope(scope + "/" + "flat_encoding"):
             hidden_flat = LearningModel.create_vector_observation_encoder(

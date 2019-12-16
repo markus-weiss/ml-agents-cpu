@@ -701,6 +701,21 @@ Prefab:
       propertyPath: m_RootOrder
       value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: 114065716362190190, guid: f2281a3adc3e640b490f89407c2e12d1,
+        type: 2}
+      propertyPath: width
+      value: 32
+      objectReference: {fileID: 0}
+    - target: {fileID: 114065716362190190, guid: f2281a3adc3e640b490f89407c2e12d1,
+        type: 2}
+      propertyPath: height
+      value: 32
+      objectReference: {fileID: 0}
+    - target: {fileID: 114065716362190190, guid: f2281a3adc3e640b490f89407c2e12d1,
+        type: 2}
+      propertyPath: grayscale
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f2281a3adc3e640b490f89407c2e12d1, type: 2}
   m_IsPrefabParent: 0
@@ -863,20 +878,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 40db664a3061b46a0a0628f90b2264f7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_TrainingConfiguration:
-    width: 128
-    height: 128
-    qualityLevel: 0
-    timeScale: 20
-    targetFrameRate: -1
-  m_InferenceConfiguration:
-    width: 1280
-    height: 720
-    qualityLevel: 5
-    timeScale: 1
-    targetFrameRate: 60
-  resetParameters:
-    m_ResetParameters: []
   agentRunSpeed: 1.5
   agentRotationSpeed: 1
   goalScoredMaterial: {fileID: 2100000, guid: df32cc593804f42df97464dc455057b8, type: 2}
